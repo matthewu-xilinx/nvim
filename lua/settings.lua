@@ -9,6 +9,5 @@ o.relativenumber = true
 o.wrap = false
 o.listchars = 'tab:>-,leadmultispace:---+,trail:.'
 o.list = true
-o.mouse = ""
 o.spell = true
 o.spelllang = 'en_gb'
