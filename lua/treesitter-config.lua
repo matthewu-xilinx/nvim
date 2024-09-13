@@ -24,7 +24,7 @@ configs.setup({
       "devicetree",
       "diff",
       "dockerfile",
-     "fortran",
+      "fortran",
       "git_config",
       "git_rebase",
       "gitattributes",
@@ -62,7 +62,6 @@ configs.setup({
       "meson",
       "ninja",
       "org",
-      "p4",
       "passwd",
       "perl",
       "php",
@@ -71,6 +70,7 @@ configs.setup({
       "proto",
       "puppet",
       "python",
+      "query",
       "regex",
       "requirements",
       "robot",
@@ -85,7 +85,7 @@ configs.setup({
       "vim",
       "vimdoc",
       "yaml",
-},
+    },
     sync_install = true,
     highlight = { enable = true },
     indent = { enable = true },
@@ -96,4 +96,5 @@ local opt = vim.opt
 
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+install.prefer_git = true
 
