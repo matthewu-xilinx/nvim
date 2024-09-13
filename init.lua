@@ -5,4 +5,4 @@ require "lualine-config"
 require "nvim-tree-config"
 require "telescope-config"
 require "luasnip-config"
-
+require "treesitter-config"
