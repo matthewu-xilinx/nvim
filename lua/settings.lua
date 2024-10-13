@@ -11,3 +11,5 @@ o.listchars = 'tab:>-,leadmultispace:---+,trail:.'
 o.list = true
 o.spell = true
 o.spelllang = 'en_gb'
+
+vim.cmd.colorscheme('vim')
