@@ -12,5 +12,6 @@ o.list = true
 o.spell = true
 o.spelllang = 'en_gb'
 o.termguicolors = true
+o.showtabline = 2
 
 vim.cmd.colorscheme('vim')
