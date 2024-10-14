@@ -5,16 +5,16 @@ end
 
 telescope.load_extension('fzf')
 
-local status_ok, trouble = pcall(require, "trouble")
-if not status_ok, then
+local status_ok, trouble = pcall(require, "trouble.sources.telescope")
+if not status_ok then
   return
 end
 
 telescope.setup({
-    defaults = {
-        mappings = {
-            i = { ["<c-t>"] = trouble.sources.telescope.open_with_trouble,
-            n = { ["<c-t>"] = trouble.sources.telescope.open_with_trouble,
-        }
+  defaults = {
+    mappings = {
+        i = { ["<c-t>"] = trouble.open },
+        n = { ["<c-t>"] = trouble.open },
     }
+  }
 })
