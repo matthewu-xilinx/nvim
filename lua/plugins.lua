@@ -37,5 +37,9 @@ return {
 	  "L3MON4D3/LuaSnip",
 	  version = "v2.*",
 	  build = "make install_jsregexp"
-  }
+  },
+  {
+    'nanozuki/tabby.nvim',
+    dependencies= {' nvim-tree/nvim-wed-devicons' }
+  },
 }
