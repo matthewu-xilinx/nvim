@@ -11,6 +11,18 @@ if not status_ok then
   return
 end
 
+parser_configs = parsers.get_parser_configs()
+
+parser_configs.p4 = {
+  install_info = {
+    url= .."tree-sitter-p4",
+    files = {"src/parser.c", "src/scanner.c"},
+    branch = "main",
+    requires_generate_from_grammar = true,
+  },
+  filetype = "p4"
+}
+
 configs.setup({
     ensure_installed = {
       "awk",
@@ -62,6 +74,7 @@ configs.setup({
       "meson",
       "ninja",
       "org",
+      "p4",
       "passwd",
       "perl",
       "php",
