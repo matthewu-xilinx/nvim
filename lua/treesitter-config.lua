@@ -15,7 +15,7 @@ parser_configs = parsers.get_parser_configs()
 
 parser_configs.p4 = {
   install_info = {
-    url= .."tree-sitter-p4",
+    url= vim.fn.stdpath('config') .."tree-sitter-p4",
     files = {"src/parser.c", "src/scanner.c"},
     branch = "main",
     requires_generate_from_grammar = true,
