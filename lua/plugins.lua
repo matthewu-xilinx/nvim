@@ -40,7 +40,7 @@ return {
   },
   {
     'nanozuki/tabby.nvim',
-    dependencies= {' nvim-tree/nvim-web-devicons' }
+    dependencies= { 'nvim-tree/nvim-web-devicons' }
   },
   {
     "folke/trouble.nvim",
