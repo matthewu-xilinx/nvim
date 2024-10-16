@@ -11,7 +11,7 @@ else
 fi
 
 mkdir -p ~/.local/share/nvim/lazy/nvim-treesitter/queries/
-if [[ ! -f ${NVIM_TREESITTER_Q_DIR} ]]; then
+if [[ ! -d ${NVIM_TREESITTER_Q_DIR} ]]; then
   ln -s "${TREESITTER_DIR}/queries" ${NVIM_TREESITTER_Q_DIR}
 fi
 
