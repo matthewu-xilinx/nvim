@@ -2,6 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 TREESITTER_DIR=${SCRIPT_DIR}/treesitter-p4
+NVIM_TREESITTER_Q_DIR=~/.local/share/nvim/lazy/nvim-treesitter/queries/p4
 
 if [[ -d ${TREESITTER_DIR} ]]; then
   (cd "${TREESITTER_DIR}" && git pull)
@@ -10,5 +11,7 @@ else
 fi
 
 mkdir -p ~/.local/share/nvim/lazy/nvim-treesitter/queries/
-ln -s "${TREESITTER_DIR}/queries" ~/.local/share/nvim/lazy/nvim-treesitter/queries/p4
+if [[ ! -f ${NVIM_TREESITTER_Q_DIR} ]]; then
+  ln -s "${TREESITTER_DIR}/queries" ${NVIM_TREESITTER_Q_DIR}
+fi
 
