@@ -26,7 +26,7 @@ return {
     build = ":TSUpdate",
   },
   {
-    "lewis6991/gitsigns.nvim.git",
+    "lewis6991/gitsigns.nvim",
   },
   {
 	  "L3MON4D3/LuaSnip",
