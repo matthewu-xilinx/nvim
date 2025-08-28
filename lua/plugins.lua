@@ -11,10 +11,6 @@ return {
     'dense-analysis/ale'
   },
   {
-    'ycm-core/youcompleteme',
-    build='python3 install.py --all --force-sudo --verbose',
-  },
-  {
     "nvim-telescope/telescope.nvim",
     dependencies = {
       {'nvim-lua/plenary.nvim'},
@@ -29,9 +25,8 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
   },
-
   {
-    "f-person/git-blame.nvim",
+    "lewis6991/gitsigns.nvim.git",
   },
   {
 	  "L3MON4D3/LuaSnip",
