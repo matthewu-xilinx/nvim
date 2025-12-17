@@ -80,5 +80,8 @@ return {
     priority = 1000,
     opts = {},
   },
+  {
+    "github/copilot.vim"
+  },
 }
 
