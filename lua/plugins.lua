@@ -84,15 +84,11 @@ return {
     "github/copilot.vim"
   },
   {
-    "folke/sidekick.nvim",
-    opts = {
-      -- add any options here
-      cli = {
-        mux = {
-          backend = "tmux",
-          enabled = true,
-        },
-      },
+    "cajames/copy-reference.nvim",
+    opts = {}, -- optional configuration
+    keys = {
+      { "yr", "<cmd>CopyReference file<cr>", mode = { "n", "v" }, desc = "Copy file path" },
+      { "yrr", "<cmd>CopyReference line<cr>", mode = { "n", "v" }, desc = "Copy file:line reference" },
     },
   },
 }
